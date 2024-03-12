@@ -1,0 +1,20 @@
+<!-- templates/bootswatch.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1>{{ page_heading }}</h1>
+        <p>{{ page_content }}</p>
+        
+</div>
+</div>
+<p><img src="{% static 'images/tukta.jpg' %}" alt="Tukta"></p>
+<div class="container">
+    <div class="jumbotron">
+    <p>Tukta is a sweet plum lover. Tukta has taken Marian plum to another level with these succulent desserts. One of her favorite desserts is Marian plum cheese pie which consists of layers of the house's special crumble base made from French AOP butter, soft cream cheese, homemade Marian plum sauce, and fresh Marian plum from Nakhon Nayok. She also makes another incredible menu for her family and friends which is a Thai-style iced dessert featuring the seasonal Marian plums served with ice and syrup.</p>
+</div>
+</div>
+{% endblock %}

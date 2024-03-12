@@ -1,0 +1,24 @@
+<!-- templates/bootswatch.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1>{{ page_heading }}</h1>
+        <p>{{ page_content }}</p>
+
+</div>
+</div>
+
+<div class="container">
+    <div class="jumbotron">
+<p><img src="{% static 'images/menu.jpg' %}" alt="Menu"></p>
+    <p>Marian plum cheese pie consists of layers of the house's special crumble base made from French AOP butter, soft cream cheese, homemade Marian plum sauce, and fresh Marian plums from Nakhon Nayok.</p>
+
+<p><img src="{% static 'images/itim.jpg' %}" alt="Itim"></p>
+      <p>Marian plum ice cream which made from cream cheese ice cream and Marian plum sorbet, this scoop of deliciousness is finished with homemade buttery salted biscuit crumbs.</p>
+</div>
+</div>
+{% endblock %}

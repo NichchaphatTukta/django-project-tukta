@@ -1,0 +1,20 @@
+<!-- templates/bootswatch.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1>{{ page_heading }}</h1>
+        <p>{{ page_content }}</p>
+
+</div>
+</div>
+<p><img src="{% static 'images/dessert.jpg' %}" alt="Dessert"></p>
+<div class="container">
+    <div class="jumbotron">
+    <p>February to April is the season of the Marian plum the fruit star of Summer in Thailand. This sweet and tangy plum is already many people's favorite on its own, but these creative Marian plum desserts have made it even more sought-after. Tukta is the Marian plum lover who creates Marian plum desserts homemade from her desire.</p>
+</div>
+</div>
+{% endblock %}
